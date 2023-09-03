@@ -16,7 +16,65 @@
 }
 
 header{
-    font-family: var(--header-text);
-    border: 1px solid black;
+    border-bottom: 2px solid #CDC2AE;
 }
 
+.list-element-header {
+    color: #CDC2AE; 
+}
+
+header > ul > li{
+    font-family: var(--header-text);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-color-change:hover {
+  transition: color 500ms ease-out 50ms;
+  color: #116A7B;
+}
+
+#welcomeLink:hover{
+    transition: color 700ms ease-out 75ms; 
+    transition: background-color 600ms ease-out 25ms; 
+    background-color: #116A7B;
+    color: #C2DEDC
+}
+
+header > ul > li:nth-child(1) > a{
+    background-color: #C2DEDC;
+    color: #116A7B;
+    font-weight: 600;
+}
+
+.hover-underline-animation{
+    position: relative;
+}
+
+
+header{
+    background-color: #F8F0E5;
+}
+
+header > ul > li > a > span {
+    padding-bottom: 11px;
+    padding-top: 10px;
+}
+
+.hover-underline-animation::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
