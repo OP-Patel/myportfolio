@@ -9,6 +9,10 @@
 /* font-family: 'Montserrat', sans-serif; */
 
 
+*{
+    scroll-behavior: smooth;
+}
+
 /* Declare commonly used variables */
 :root {
   --header-text: 'Barlow Condensed', sans-serif;
@@ -77,4 +81,57 @@ header > ul > li > a > span {
 .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: center;
+}
+
+body{
+    background-color: #FFF3DA;
+    /* border-bottom: 2px solid #CDC2AE; */
+}
+
+
+#welcomeText > span{
+    font-family: var(--header-text);
+    font-size: 100px;
+    background: -webkit-linear-gradient(#6096B4, #93BFCF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    display: inline-block;
+}
+
+p{
+    font-family: var(--body-text) !important;
+    font-weight: 500 !important;
+}
+
+#welcomeText > span:hover {
+    transition: transform 100ms;
+    -webkit-transform: scale(1);
+    transform: scale(1.5);
+}
+
+
+#welcome > a > svg{
+    animation: hoverUpandDown 750ms infinite;
+}
+
+
+#section1{
+    height: 100vh !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("codingBG.png"); 
+
+}
+
+@-webkit-keyframes hoverUpandDown {
+    0% { }
+    50% { transform: translateY(-5px); }
+    100% { }
+}
+@keyframes hoverUpandDown {
+    0% { }
+    50% { transform: translateY(-5px); }
+    100% { }
 }
