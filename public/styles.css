@@ -1,1 +1,22 @@
 /* Stylesheet for website */
+
+/* Font imports Header (1) & Body Text (2)*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+
+/* Declare commonly used variables */
+:root {
+  --header-text: 'Barlow Condensed', sans-serif;
+  --body-text: 'Montserrat', sans-serif; 
+}
+
+header{
+    font-family: var(--header-text);
+    border: 1px solid black;
+}
+
