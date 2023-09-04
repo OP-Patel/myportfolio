@@ -55,7 +55,6 @@ header > ul > li:nth-child(1) > a{
     position: relative;
 }
 
-
 header{
     background-color: #F8F0E5;
 }
@@ -63,6 +62,7 @@ header{
 header > ul > li > a > span {
     padding-bottom: 11px;
     padding-top: 10px;
+    color: #CDC2AE;
 }
 
 .hover-underline-animation::after{
@@ -73,7 +73,7 @@ header > ul > li > a > span {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: gray;
+    background-color: #116A7B;
     transform-origin: center;
     transition: transform 0.25s ease-out;
 }
@@ -110,6 +110,17 @@ p{
     transform: scale(1.5);
 }
 
+.iconrowWrapper > .iconWrapper > img:hover {
+    transition: transform 100ms;
+    -webkit-transform: scale(1);
+    transform: scale(1.25);
+}
+
+.row > .col:hover{
+    transition: transform 100ms;
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+}
 
 #welcome > a > svg{
     animation: hoverUpandDown 750ms infinite;
@@ -122,6 +133,7 @@ p{
     justify-content: center;
     align-items: center;
     background-image: url("codingBG.png"); 
+    border-bottom: 2px solid #CDC2AE;
 
 }
 
@@ -134,4 +146,72 @@ p{
     0% { }
     50% { transform: translateY(-5px); }
     100% { }
+}
+
+#hanging-icons > h2 {
+    font-family: var(--header-text);
+    color: #116A7B;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.iconrowWrapper{
+    display: flex; 
+    flex-direction: row; 
+    gap: 50px; 
+    justify-content: center;
+}
+
+.iconWrapper{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.iconWrapper > img {
+    width: 100px;
+    height: 100px;
+}
+
+.image{
+    background-color: #CDC2AE !important;
+}
+
+#andMore{
+    color: gray;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#custom-cards > h2{
+    font-family: var(--header-text);
+    color: #116A7B;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.middleText{
+    font-family: var(--body-text);
+    color: black; 
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#UofT{
+    color: black;
+    font-family: var(--body-text);
+}
+
+#randomText{
+    color: black;
+    font-family: var(--body-text);
+}
+
+#section15{
+    height: 40vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
